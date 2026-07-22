@@ -19,7 +19,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-pollution-filter",
-        category = "crafting",
+        categories = {"advanced-crafting"},
         enabled = false,
         energy_required = 2,
         ingredients = {
@@ -34,7 +34,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-pollution-filter-cleaning",
-        category = "chemistry",
+        categories = {"chemistry"},
         enabled = false,
         icons = {
             { icon = "__atan-air-scrubbing__/graphics/icons/used-pollution-filter.png" },
@@ -58,7 +58,7 @@ data:extend({
                 name = "sulfur",
                 amount_min = 0,
                 amount_max = 3,
-                probability = 0.1,
+                independent_probability = 0.1,
             },
         },
         main_product = "atan-pollution-filter",
@@ -68,7 +68,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-pollution-scrubbing",
-        category = "atmospheric-filtration",
+        categories = {"atmospheric-filtration"},
         enabled = false,
         icons = {
             { icon = "__base__/graphics/icons/nauvis.png", draw_background = true },

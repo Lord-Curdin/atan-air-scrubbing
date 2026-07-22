@@ -1,10 +1,10 @@
 {
     "name": "atan-air-scrubbing",
-    "version": "0.2.8",
+    "version": "0.2.9",
     "title": "Air Scrubbing",
     "author": "atanvarno",
     "description": "Adds air scrubbing to remove pollution and spores.",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "dependencies": [
         "base >= 2.0.23",
         "? space-age >= 2.0.23",

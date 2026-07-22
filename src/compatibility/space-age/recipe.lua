@@ -2,9 +2,9 @@ if not mods["space-age"] then
     return
 end
 
-data.raw["recipe"]["atan-pollution-filter"].category = "organic-or-assembling"
+data.raw["recipe"]["atan-pollution-filter"].categories = {"organic","advanced-crafting"}
 data.raw["recipe"]["atan-pollution-filter"].ingredients[1].name = "carbon"
-data.raw["recipe"]["atan-pollution-filter-cleaning"].category = "organic-or-chemistry"
+data.raw["recipe"]["atan-pollution-filter-cleaning"].categories = {"organic","advanced-crafting"}
 
 data.raw["recipe"]["atan-air-scrubber"].surface_conditions = {
     { property = "pressure", min = 1 },
@@ -13,7 +13,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-spore-filter",
-        category = "organic-or-assembling",
+        categories = {"organic","advanced-crafting"},
         enabled = false,
         energy_required = 2,
         ingredients = {
@@ -28,7 +28,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-spore-filter-cleaning",
-        category = "organic-or-chemistry",
+        categories = {"organic","chemistry"},
         enabled = false,
         icons = {
             { icon = "__atan-air-scrubbing__/graphics/icons/used-spore-filter.png" },
@@ -52,7 +52,7 @@ data:extend({
                 name = "spoilage",
                 amount_min = 0,
                 amount_max = 3,
-                probability = 0.1,
+                independent_probability = 0.1,
             },
         },
         main_product = "atan-spore-filter",
@@ -62,7 +62,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-spore-scrubbing",
-        category = "atmospheric-filtration",
+        categories = {"atmospheric-filtration"},
         enabled = false,
         icons = {
             { icon = "__space-age__/graphics/icons/gleba.png", draw_background = true },
